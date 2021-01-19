@@ -21,7 +21,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="180" id="NYc-OK-Uye"/>
                                 </constraints>
-                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda. Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -35,15 +35,30 @@
                                     <segment title="Third"/>
                                 </segments>
                             </segmentedControl>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OkB-gO-Xu9">
+                                <rect key="frame" x="306" y="257" width="51" height="31"/>
+                                <color key="onTintColor" systemColor="systemPurpleColor"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Smart Mode:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UpD-9I-Jut">
+                                <rect key="frame" x="20" y="261" width="99" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <constraints>
                             <constraint firstItem="wbw-Yr-PnU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Fgb-gS-1vE"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tPn-wa-FBk" secondAttribute="trailing" constant="20" id="OOG-Bw-MTe"/>
                             <constraint firstItem="tPn-wa-FBk" firstAttribute="top" secondItem="wbw-Yr-PnU" secondAttribute="bottom" constant="10" id="VWW-fw-dFS"/>
+                            <constraint firstItem="UpD-9I-Jut" firstAttribute="top" secondItem="tPn-wa-FBk" secondAttribute="bottom" constant="20" id="Z8B-wo-BTk"/>
                             <constraint firstItem="tPn-wa-FBk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="d2r-G1-2lJ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wbw-Yr-PnU" secondAttribute="trailing" constant="20" id="dk6-rj-EUm"/>
+                            <constraint firstItem="OkB-gO-Xu9" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="UpD-9I-Jut" secondAttribute="trailing" constant="8" symbolic="YES" id="dre-5H-RLv"/>
+                            <constraint firstItem="UpD-9I-Jut" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="lRL-lp-2ZY"/>
                             <constraint firstItem="wbw-Yr-PnU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="n16-6I-ndd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OkB-gO-Xu9" secondAttribute="trailing" constant="20" id="vI3-ro-T6x"/>
+                            <constraint firstItem="OkB-gO-Xu9" firstAttribute="top" secondItem="tPn-wa-FBk" secondAttribute="bottom" constant="16" id="xWi-R8-I0c"/>
                         </constraints>
                     </view>
                 </viewController>
