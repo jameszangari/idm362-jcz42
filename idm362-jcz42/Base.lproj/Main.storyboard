@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -25,10 +26,22 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="tPn-wa-FBk">
+                                <rect key="frame" x="20" y="210" width="335" height="32"/>
+                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                    <segment title="Third"/>
+                                </segments>
+                            </segmentedControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <constraints>
                             <constraint firstItem="wbw-Yr-PnU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Fgb-gS-1vE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tPn-wa-FBk" secondAttribute="trailing" constant="20" id="OOG-Bw-MTe"/>
+                            <constraint firstItem="tPn-wa-FBk" firstAttribute="top" secondItem="wbw-Yr-PnU" secondAttribute="bottom" constant="10" id="VWW-fw-dFS"/>
+                            <constraint firstItem="tPn-wa-FBk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="d2r-G1-2lJ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wbw-Yr-PnU" secondAttribute="trailing" constant="20" id="dk6-rj-EUm"/>
                             <constraint firstItem="wbw-Yr-PnU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="n16-6I-ndd"/>
                         </constraints>
@@ -39,4 +52,9 @@
             <point key="canvasLocation" x="138.40000000000001" y="93.103448275862078"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
