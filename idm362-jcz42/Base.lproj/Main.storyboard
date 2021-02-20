@@ -1,112 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qcL-Fg-Sze">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <device id="retina4_7" orientation="portrait" appearance="dark"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Raleway-Bold.ttf">
+            <string>Raleway-Bold</string>
+        </array>
+    </customFonts>
     <scenes>
-        <!--Settings-->
-        <scene sceneID="Q4s-Wy-LXT">
-            <objects>
-                <viewController id="Tkz-T4-1c8" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Kbo-2Z-rSf">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3LW-mh-PJB">
-                                <rect key="frame" x="306" y="103" width="51" height="31"/>
-                                <color key="onTintColor" red="0.98039215690000003" green="0.75686274509999996" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </switch>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Auto Save into Photos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IOe-Or-LgW">
-                                <rect key="frame" x="20" y="107" width="266" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HDr-Se-TIl">
-                                <rect key="frame" x="0.0" y="40" width="375" height="27"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cdn-Vw-dJ1">
-                                <rect key="frame" x="306" y="164" width="51" height="31"/>
-                                <color key="onTintColor" red="0.98039215690000003" green="0.75686274509999996" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </switch>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Keep Photos in The App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MdP-0G-EPN">
-                                <rect key="frame" x="20" y="168" width="266" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0rd-WI-Opu">
-                                <rect key="frame" x="306" y="225" width="51" height="31"/>
-                                <color key="onTintColor" red="0.98039215690000003" green="0.75686274509999996" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </switch>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Preserve Original Photos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pbf-Fv-FwI">
-                                <rect key="frame" x="20" y="229" width="266" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bZH-Ra-vnb">
-                                <rect key="frame" x="137.5" y="310" width="100" height="24"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sOe-md-xvh">
-                                <rect key="frame" x="20" y="354" width="335" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rcv-rt-BQ6">
-                                <rect key="frame" x="20" y="398" width="335" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="mDB-Rd-Lkv"/>
-                        <color key="backgroundColor" systemColor="systemGray5Color"/>
-                        <constraints>
-                            <constraint firstItem="rcv-rt-BQ6" firstAttribute="leading" secondItem="mDB-Rd-Lkv" secondAttribute="leading" constant="20" id="4wb-NT-UfL"/>
-                            <constraint firstItem="IOe-Or-LgW" firstAttribute="top" secondItem="HDr-Se-TIl" secondAttribute="bottom" constant="40" id="7eq-30-bCU"/>
-                            <constraint firstItem="mDB-Rd-Lkv" firstAttribute="trailing" secondItem="cdn-Vw-dJ1" secondAttribute="trailing" constant="20" id="96Z-th-ftc"/>
-                            <constraint firstItem="3LW-mh-PJB" firstAttribute="top" secondItem="HDr-Se-TIl" secondAttribute="bottom" constant="36" id="9ZY-P3-ds5"/>
-                            <constraint firstItem="mDB-Rd-Lkv" firstAttribute="trailing" secondItem="3LW-mh-PJB" secondAttribute="trailing" constant="20" id="EZy-dE-22G"/>
-                            <constraint firstItem="cdn-Vw-dJ1" firstAttribute="top" secondItem="3LW-mh-PJB" secondAttribute="bottom" constant="30" id="Gvm-tg-AiO"/>
-                            <constraint firstItem="0rd-WI-Opu" firstAttribute="top" secondItem="cdn-Vw-dJ1" secondAttribute="bottom" constant="30" id="KtZ-oM-tgP"/>
-                            <constraint firstItem="sOe-md-xvh" firstAttribute="top" secondItem="bZH-Ra-vnb" secondAttribute="bottom" constant="20" id="LdW-s3-sNN"/>
-                            <constraint firstItem="MdP-0G-EPN" firstAttribute="top" secondItem="IOe-Or-LgW" secondAttribute="bottom" constant="40" id="P3N-jU-hvG"/>
-                            <constraint firstItem="mDB-Rd-Lkv" firstAttribute="trailing" secondItem="rcv-rt-BQ6" secondAttribute="trailing" constant="20" id="Rt7-qe-jsk"/>
-                            <constraint firstItem="HDr-Se-TIl" firstAttribute="top" secondItem="mDB-Rd-Lkv" secondAttribute="top" constant="40" id="T6c-Df-VAd"/>
-                            <constraint firstItem="sOe-md-xvh" firstAttribute="leading" secondItem="mDB-Rd-Lkv" secondAttribute="leading" constant="20" id="TOm-xQ-5lW"/>
-                            <constraint firstItem="3LW-mh-PJB" firstAttribute="leading" secondItem="IOe-Or-LgW" secondAttribute="trailing" constant="20" id="Tuf-WU-u2c"/>
-                            <constraint firstItem="rcv-rt-BQ6" firstAttribute="top" secondItem="sOe-md-xvh" secondAttribute="bottom" constant="10" id="VHA-aX-qvm"/>
-                            <constraint firstItem="mDB-Rd-Lkv" firstAttribute="trailing" secondItem="sOe-md-xvh" secondAttribute="trailing" constant="20" id="Wbq-f1-qnO"/>
-                            <constraint firstItem="Pbf-Fv-FwI" firstAttribute="top" secondItem="MdP-0G-EPN" secondAttribute="bottom" constant="40" id="Z4D-iL-7oh"/>
-                            <constraint firstItem="mDB-Rd-Lkv" firstAttribute="trailing" secondItem="0rd-WI-Opu" secondAttribute="trailing" constant="20" id="aWt-sn-oEC"/>
-                            <constraint firstItem="cdn-Vw-dJ1" firstAttribute="leading" secondItem="MdP-0G-EPN" secondAttribute="trailing" constant="20" id="fEr-N4-8Bw"/>
-                            <constraint firstItem="HDr-Se-TIl" firstAttribute="centerX" secondItem="Kbo-2Z-rSf" secondAttribute="centerX" id="kHE-9f-f1e"/>
-                            <constraint firstItem="0rd-WI-Opu" firstAttribute="leading" secondItem="Pbf-Fv-FwI" secondAttribute="trailing" constant="20" id="kkf-MA-EA3"/>
-                            <constraint firstItem="HDr-Se-TIl" firstAttribute="leading" secondItem="mDB-Rd-Lkv" secondAttribute="leading" id="pvf-fj-Erl"/>
-                            <constraint firstItem="Pbf-Fv-FwI" firstAttribute="leading" secondItem="mDB-Rd-Lkv" secondAttribute="leading" constant="20" id="rjM-vB-7bz"/>
-                            <constraint firstItem="bZH-Ra-vnb" firstAttribute="top" secondItem="Pbf-Fv-FwI" secondAttribute="bottom" constant="60" id="sN4-0v-wZ4"/>
-                            <constraint firstItem="bZH-Ra-vnb" firstAttribute="centerX" secondItem="Kbo-2Z-rSf" secondAttribute="centerX" id="tvb-Ns-OEX"/>
-                            <constraint firstItem="IOe-Or-LgW" firstAttribute="leading" secondItem="mDB-Rd-Lkv" secondAttribute="leading" constant="20" id="ukr-hl-vLQ"/>
-                            <constraint firstItem="MdP-0G-EPN" firstAttribute="leading" secondItem="mDB-Rd-Lkv" secondAttribute="leading" constant="20" id="z6Q-Ia-BQm"/>
-                        </constraints>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Settings" image="gearshape.fill" catalog="system" id="Znf-cW-KbM"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="kfI-We-wgq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1741.5999999999999" y="527.58620689655174"/>
-        </scene>
         <!--Home-->
         <scene sceneID="TYP-vD-r2a">
             <objects>
@@ -115,116 +21,393 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Topic: Frogs" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fDf-2e-vD4">
-                                <rect key="frame" x="140.5" y="242.5" width="94" height="21"/>
-                                <accessibility key="accessibilityConfiguration">
-                                    <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
-                                </accessibility>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="1. To get started, click the &quot;Camera&quot; button 2. Take your best picture with the topic provided below!" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BtY-Un-lgu">
-                                <rect key="frame" x="42" y="86" width="291" height="66.5"/>
-                                <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5xp-xE-6rN">
-                                <rect key="frame" x="254.5" y="242" width="18" height="22"/>
-                                <color key="tintColor" red="0.87843137250000003" green="0.2666666667" blue="0.51372549020000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" image="arrow.clockwise" catalog="system"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gm0-eT-7P7">
-                                <rect key="frame" x="143.5" y="536" width="88" height="22"/>
-                                <color key="backgroundColor" name="FlashColors"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Camera" image="camera" catalog="system"/>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Flash Focus!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FBP-K6-Q1q">
-                                <rect key="frame" x="69" y="40" width="237.5" height="27"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="dck-ZS-eLk">
+                                <rect key="frame" x="69" y="183.5" width="237" height="300"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" insetsLayoutMarginsFromSafeArea="NO" image="MelodeeIcon" translatesAutoresizingMaskIntoConstraints="NO" id="Yx4-Lr-61R">
+                                        <rect key="frame" x="0.0" y="0.0" width="237" height="150"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="150" id="91B-3T-Ztq"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="icT-nZ-BZj"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Melodee" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qBe-Px-PHK">
+                                        <rect key="frame" x="0.0" y="190" width="237" height="110"/>
+                                        <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="36"/>
+                                        <color key="textColor" name="AccentColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="dck-ZS-eLk" secondAttribute="height" multiplier="15:19" id="JUD-AJ-psX"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="300" id="JdM-pP-Tfc"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="iJI-vA-5HK"/>
-                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                        <color key="backgroundColor" red="0.3529411764705882" green="0.36470588235294116" blue="0.43529411764705883" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="Gm0-eT-7P7" firstAttribute="centerX" secondItem="fDf-2e-vD4" secondAttribute="centerX" id="0Kk-cD-LRG"/>
-                            <constraint firstItem="iJI-vA-5HK" firstAttribute="bottom" secondItem="Gm0-eT-7P7" secondAttribute="bottom" constant="60" id="3TJ-WW-86J"/>
-                            <constraint firstItem="Gm0-eT-7P7" firstAttribute="centerX" secondItem="XsX-wC-dfb" secondAttribute="centerX" id="4fP-x8-L8U"/>
-                            <constraint firstItem="BtY-Un-lgu" firstAttribute="centerX" secondItem="XsX-wC-dfb" secondAttribute="centerX" id="6ko-js-vEr"/>
-                            <constraint firstItem="5xp-xE-6rN" firstAttribute="centerY" secondItem="fDf-2e-vD4" secondAttribute="centerY" id="SbH-BN-JCt"/>
-                            <constraint firstItem="fDf-2e-vD4" firstAttribute="top" secondItem="BtY-Un-lgu" secondAttribute="bottom" constant="90" id="TGP-Rn-nbD"/>
-                            <constraint firstItem="FBP-K6-Q1q" firstAttribute="centerX" secondItem="XsX-wC-dfb" secondAttribute="centerX" id="c8M-YN-9jJ"/>
-                            <constraint firstItem="FBP-K6-Q1q" firstAttribute="top" secondItem="iJI-vA-5HK" secondAttribute="top" constant="40" id="i2G-ry-5rb"/>
-                            <constraint firstItem="BtY-Un-lgu" firstAttribute="leading" secondItem="iJI-vA-5HK" secondAttribute="leading" constant="42" id="jon-ru-6fF"/>
-                            <constraint firstItem="fDf-2e-vD4" firstAttribute="centerX" secondItem="XsX-wC-dfb" secondAttribute="centerX" id="nKR-xX-hKy"/>
-                            <constraint firstItem="BtY-Un-lgu" firstAttribute="top" secondItem="XsX-wC-dfb" secondAttribute="top" constant="86" id="sEi-yU-3Ap"/>
-                            <constraint firstItem="5xp-xE-6rN" firstAttribute="leading" secondItem="fDf-2e-vD4" secondAttribute="trailing" constant="20" id="xXU-Dh-Mbg"/>
+                            <constraint firstItem="dck-ZS-eLk" firstAttribute="centerX" secondItem="XsX-wC-dfb" secondAttribute="centerX" id="PeO-cf-O2o"/>
+                            <constraint firstItem="dck-ZS-eLk" firstAttribute="centerY" secondItem="XsX-wC-dfb" secondAttribute="centerY" id="cAS-AR-MMs"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" image="app.badge.fill" catalog="system" id="AYA-Pp-iw0"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="house.fill" catalog="system" id="AYA-Pp-iw0"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hkv-RN-aF5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-196" y="527.58620689655174"/>
+            <point key="canvasLocation" x="-196" y="528"/>
         </scene>
-        <!--Library-->
+        <!--Piano-->
         <scene sceneID="Iv9-14-pLH">
             <objects>
-                <viewController id="90U-E2-ykW" sceneMemberID="viewController">
+                <viewController id="90U-E2-ykW" customClass="EditViewController" customModule="idm362_jcz42" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dKF-Ii-Od9">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gk8-xc-vvs">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="2x5-aT-3N9">
+                                <rect key="frame" x="20" y="40" width="335" height="90"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QtU-va-85N" userLabel="Content View">
-                                        <rect key="frame" x="0.0" y="20" width="375" height="1200"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Library" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KjV-jd-ZGP">
-                                                <rect key="frame" x="130.5" y="40" width="114" height="27"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                        <constraints>
-                                            <constraint firstItem="KjV-jd-ZGP" firstAttribute="top" secondItem="QtU-va-85N" secondAttribute="top" constant="40" id="COk-2w-HFU"/>
-                                            <constraint firstItem="KjV-jd-ZGP" firstAttribute="centerX" secondItem="QtU-va-85N" secondAttribute="centerX" id="FdZ-sZ-vxD"/>
-                                            <constraint firstAttribute="height" constant="1200" id="gnX-wS-Skz"/>
-                                        </constraints>
-                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cRw-Ab-kN5">
+                                        <rect key="frame" x="0.0" y="0.0" width="98.5" height="90"/>
+                                        <color key="backgroundColor" red="0.26666666666666666" green="0.26666666666666666" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="48"/>
+                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="C"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="playPianoC:" destination="90U-E2-ykW" eventType="touchUpInside" id="p4e-Fh-AJH"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m0h-VL-bVu">
+                                        <rect key="frame" x="118.5" y="0.0" width="98" height="90"/>
+                                        <color key="backgroundColor" red="0.2666666667" green="0.2666666667" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="48"/>
+                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="C#"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="playPianoCsharp:" destination="90U-E2-ykW" eventType="touchUpInside" id="AAM-TK-7rz"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1gS-Xh-T5y">
+                                        <rect key="frame" x="236.5" y="0.0" width="98.5" height="90"/>
+                                        <color key="backgroundColor" red="0.2666666667" green="0.2666666667" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="48"/>
+                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="D"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="playPianoD:" destination="90U-E2-ykW" eventType="touchUpInside" id="Og9-FO-PUK"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="QtU-va-85N" firstAttribute="bottom" secondItem="pFs-ul-MXY" secondAttribute="bottom" id="45n-qd-y8u"/>
-                                    <constraint firstItem="QtU-va-85N" firstAttribute="trailing" secondItem="pFs-ul-MXY" secondAttribute="trailing" id="Cdo-fl-wIR"/>
-                                    <constraint firstItem="QtU-va-85N" firstAttribute="top" secondItem="pFs-ul-MXY" secondAttribute="top" constant="20" id="Inh-Je-aUP"/>
-                                    <constraint firstItem="QtU-va-85N" firstAttribute="width" secondItem="w9L-LC-bnT" secondAttribute="width" id="clg-NL-Mab"/>
-                                    <constraint firstItem="QtU-va-85N" firstAttribute="leading" secondItem="pFs-ul-MXY" secondAttribute="leading" id="hJu-12-dGm"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="90" id="bjm-iL-hPJ"/>
+                                    <constraint firstAttribute="width" secondItem="2x5-aT-3N9" secondAttribute="height" multiplier="67:18" id="tP0-Lk-Phu"/>
                                 </constraints>
-                                <viewLayoutGuide key="contentLayoutGuide" id="pFs-ul-MXY"/>
-                                <viewLayoutGuide key="frameLayoutGuide" id="w9L-LC-bnT"/>
-                            </scrollView>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Iia-Sc-7p0">
+                                <rect key="frame" x="20" y="150" width="335" height="90"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ax0-16-DbN">
+                                        <rect key="frame" x="0.0" y="0.0" width="98.5" height="90"/>
+                                        <color key="backgroundColor" red="0.2666666667" green="0.2666666667" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="48"/>
+                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="D#"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="playPianoDsharp:" destination="90U-E2-ykW" eventType="touchUpInside" id="36X-Px-5cb"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D8f-Y9-b4w">
+                                        <rect key="frame" x="118.5" y="0.0" width="98" height="90"/>
+                                        <color key="backgroundColor" red="0.2666666667" green="0.2666666667" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="48"/>
+                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="E"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="playPianoE:" destination="90U-E2-ykW" eventType="touchUpInside" id="T3w-WK-lIg"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i8p-i7-bQd">
+                                        <rect key="frame" x="236.5" y="0.0" width="98.5" height="90"/>
+                                        <color key="backgroundColor" red="0.2666666667" green="0.2666666667" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="48"/>
+                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="F"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="playPianoF:" destination="90U-E2-ykW" eventType="touchUpInside" id="8SH-Dh-jow"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Iia-Sc-7p0" secondAttribute="height" multiplier="67:18" id="2X5-qT-iVO"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="90" id="ahZ-bb-qxH"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="fx2-Yk-eun">
+                                <rect key="frame" x="20" y="260" width="335" height="90"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ac5-h3-joy">
+                                        <rect key="frame" x="0.0" y="0.0" width="98.5" height="90"/>
+                                        <color key="backgroundColor" red="0.2666666667" green="0.2666666667" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="48"/>
+                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="F#"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="playPianoFsharp:" destination="90U-E2-ykW" eventType="touchUpInside" id="pQh-3F-u36"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uuz-Or-Jkf">
+                                        <rect key="frame" x="118.5" y="0.0" width="98" height="90"/>
+                                        <color key="backgroundColor" red="0.2666666667" green="0.2666666667" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="48"/>
+                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="G"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="playPianoG:" destination="90U-E2-ykW" eventType="touchUpInside" id="0eb-JJ-4l9"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j2y-gU-Nzh">
+                                        <rect key="frame" x="236.5" y="0.0" width="98.5" height="90"/>
+                                        <color key="backgroundColor" red="0.2666666667" green="0.2666666667" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="48"/>
+                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="G#"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="playPianoGsharp:" destination="90U-E2-ykW" eventType="touchUpInside" id="wp2-zT-TBf"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="fx2-Yk-eun" secondAttribute="height" multiplier="67:18" id="7zq-Yf-P6g"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="90" id="u3B-3e-Wqp"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="sqO-Lv-sdw">
+                                <rect key="frame" x="20" y="370" width="335" height="90"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WFY-S4-QeY">
+                                        <rect key="frame" x="0.0" y="0.0" width="98.5" height="90"/>
+                                        <color key="backgroundColor" red="0.2666666667" green="0.2666666667" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="48"/>
+                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="A"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="playPianoA:" destination="90U-E2-ykW" eventType="touchUpInside" id="Axl-A7-5js"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lCh-lJ-NSW">
+                                        <rect key="frame" x="118.5" y="0.0" width="98" height="90"/>
+                                        <color key="backgroundColor" red="0.2666666667" green="0.2666666667" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="48"/>
+                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="A#"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="playPianoAsharp:" destination="90U-E2-ykW" eventType="touchUpInside" id="vlT-jr-ZGK"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k0x-8m-3Rb">
+                                        <rect key="frame" x="236.5" y="0.0" width="98.5" height="90"/>
+                                        <color key="backgroundColor" red="0.2666666667" green="0.2666666667" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="48"/>
+                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="B"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="playPianoB:" destination="90U-E2-ykW" eventType="touchUpInside" id="KK7-UT-lO0"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="sqO-Lv-sdw" secondAttribute="height" multiplier="67:18" id="63A-5L-LRO"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="90" id="Yio-vd-Hmx"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Yse-Xe-0Mc"/>
-                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                        <color key="backgroundColor" red="0.35294117650000001" green="0.36470588240000001" blue="0.43529411759999997" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="gk8-xc-vvs" firstAttribute="trailing" secondItem="Yse-Xe-0Mc" secondAttribute="trailing" id="ZTs-xO-blc"/>
-                            <constraint firstItem="gk8-xc-vvs" firstAttribute="bottom" secondItem="Yse-Xe-0Mc" secondAttribute="bottom" id="ic7-iK-XAY"/>
-                            <constraint firstItem="gk8-xc-vvs" firstAttribute="top" secondItem="Yse-Xe-0Mc" secondAttribute="top" id="kap-4v-fIs"/>
-                            <constraint firstItem="gk8-xc-vvs" firstAttribute="leading" secondItem="Yse-Xe-0Mc" secondAttribute="leading" id="na1-xk-pHO"/>
+                            <constraint firstItem="Yse-Xe-0Mc" firstAttribute="trailing" secondItem="sqO-Lv-sdw" secondAttribute="trailing" constant="20" id="1id-AE-YTa"/>
+                            <constraint firstItem="Yse-Xe-0Mc" firstAttribute="trailing" secondItem="Iia-Sc-7p0" secondAttribute="trailing" constant="20" id="6Je-55-v18"/>
+                            <constraint firstItem="Yse-Xe-0Mc" firstAttribute="trailing" secondItem="2x5-aT-3N9" secondAttribute="trailing" constant="20" id="9jG-NR-Mn8"/>
+                            <constraint firstItem="fx2-Yk-eun" firstAttribute="top" secondItem="Iia-Sc-7p0" secondAttribute="bottom" constant="20" id="Ajw-VB-2Kq"/>
+                            <constraint firstItem="Iia-Sc-7p0" firstAttribute="top" secondItem="2x5-aT-3N9" secondAttribute="bottom" constant="20" id="CJE-O6-BQK"/>
+                            <constraint firstItem="Yse-Xe-0Mc" firstAttribute="trailing" secondItem="fx2-Yk-eun" secondAttribute="trailing" constant="20" id="Dxn-WQ-B1Z"/>
+                            <constraint firstItem="fx2-Yk-eun" firstAttribute="leading" secondItem="Yse-Xe-0Mc" secondAttribute="leading" constant="20" id="GS0-Dw-QVb"/>
+                            <constraint firstItem="2x5-aT-3N9" firstAttribute="top" secondItem="Yse-Xe-0Mc" secondAttribute="top" constant="40" id="J0d-O5-kLO"/>
+                            <constraint firstItem="Iia-Sc-7p0" firstAttribute="leading" secondItem="Yse-Xe-0Mc" secondAttribute="leading" constant="20" id="bTN-pE-GNc"/>
+                            <constraint firstItem="sqO-Lv-sdw" firstAttribute="top" secondItem="fx2-Yk-eun" secondAttribute="bottom" constant="20" id="flJ-ex-7KW"/>
+                            <constraint firstItem="2x5-aT-3N9" firstAttribute="leading" secondItem="Yse-Xe-0Mc" secondAttribute="leading" constant="20" id="g9D-LA-MdN"/>
+                            <constraint firstItem="sqO-Lv-sdw" firstAttribute="leading" secondItem="Yse-Xe-0Mc" secondAttribute="leading" constant="20" id="gVM-I7-pZK"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Library" image="photo.on.rectangle.angled" catalog="system" id="RMW-ry-h5k"/>
+                    <tabBarItem key="tabBarItem" title="Piano" image="pianokeys.inverse" catalog="system" id="RMW-ry-h5k"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fyw-BL-Dto" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="704.79999999999995" y="527.58620689655174"/>
+        </scene>
+        <!--Drums-->
+        <scene sceneID="dw4-MD-Kj1">
+            <objects>
+                <viewController id="oeO-rS-933" customClass="EditViewController" customModule="idm362_jcz42" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FkA-Wz-PNE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="aum-iq-Icl">
+                                <rect key="frame" x="60" y="40" width="255" height="90"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jbc-mD-tKg">
+                                        <rect key="frame" x="0.0" y="0.0" width="107.5" height="90"/>
+                                        <color key="backgroundColor" red="0.2666666667" green="0.2666666667" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" image="kick"/>
+                                        <connections>
+                                            <action selector="playDrumKick:" destination="oeO-rS-933" eventType="touchUpInside" id="YCe-O7-bw5"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I4B-tz-ptY">
+                                        <rect key="frame" x="147.5" y="0.0" width="107.5" height="90"/>
+                                        <color key="backgroundColor" red="0.2666666667" green="0.2666666667" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" image="snare"/>
+                                        <connections>
+                                            <action selector="playDrumSnare:" destination="oeO-rS-933" eventType="touchUpInside" id="X7G-zF-CyZ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="90" id="Cmz-DL-NvT"/>
+                                    <constraint firstAttribute="width" secondItem="aum-iq-Icl" secondAttribute="height" multiplier="17:6" id="Zcf-bF-Sj2"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="XOx-Kx-C8f">
+                                <rect key="frame" x="60" y="170" width="255" height="90"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="shc-Mf-SSl">
+                                        <rect key="frame" x="0.0" y="0.0" width="107.5" height="90"/>
+                                        <color key="backgroundColor" red="0.2666666667" green="0.2666666667" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" image="hat"/>
+                                        <connections>
+                                            <action selector="playDrumHat:" destination="oeO-rS-933" eventType="touchUpInside" id="2RD-23-pjm"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y0S-LR-z4u">
+                                        <rect key="frame" x="147.5" y="0.0" width="107.5" height="90"/>
+                                        <color key="backgroundColor" red="0.2666666667" green="0.2666666667" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" image="cymbal"/>
+                                        <connections>
+                                            <action selector="playDrumCrash:" destination="oeO-rS-933" eventType="touchUpInside" id="0kv-1V-Ava"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="90" id="NaW-yG-9F7"/>
+                                    <constraint firstAttribute="width" secondItem="XOx-Kx-C8f" secondAttribute="height" multiplier="17:6" id="czN-yd-eiE"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="HoM-9r-fJg">
+                                <rect key="frame" x="60" y="300" width="255" height="90"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ppY-nh-jPy">
+                                        <rect key="frame" x="0.0" y="0.0" width="107.5" height="90"/>
+                                        <color key="backgroundColor" red="0.2666666667" green="0.2666666667" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" image="tom"/>
+                                        <connections>
+                                            <action selector="playDrumTom:" destination="oeO-rS-933" eventType="touchUpInside" id="u1F-fV-qAJ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gFm-kj-UEb">
+                                        <rect key="frame" x="147.5" y="0.0" width="107.5" height="90"/>
+                                        <color key="backgroundColor" red="0.2666666667" green="0.2666666667" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" image="perc"/>
+                                        <connections>
+                                            <action selector="playDrumPerc:" destination="oeO-rS-933" eventType="touchUpInside" id="TNS-T8-DGt"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="HoM-9r-fJg" secondAttribute="height" multiplier="17:6" id="qYo-Nx-vMO"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="90" id="xb3-LO-Oa6"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Zig-tk-C8y"/>
+                        <color key="backgroundColor" red="0.35294117650000001" green="0.36470588240000001" blue="0.43529411759999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Zig-tk-C8y" firstAttribute="trailing" secondItem="aum-iq-Icl" secondAttribute="trailing" constant="60" id="1sk-45-mcx"/>
+                            <constraint firstItem="HoM-9r-fJg" firstAttribute="leading" secondItem="Zig-tk-C8y" secondAttribute="leading" constant="60" id="Dy2-DA-CK2"/>
+                            <constraint firstItem="aum-iq-Icl" firstAttribute="top" secondItem="Zig-tk-C8y" secondAttribute="top" constant="40" id="HuW-ec-Cor"/>
+                            <constraint firstItem="XOx-Kx-C8f" firstAttribute="top" secondItem="aum-iq-Icl" secondAttribute="bottom" constant="40" id="LNj-Qn-teP"/>
+                            <constraint firstItem="Zig-tk-C8y" firstAttribute="trailing" secondItem="HoM-9r-fJg" secondAttribute="trailing" constant="60" id="UCV-Wq-PgE"/>
+                            <constraint firstItem="HoM-9r-fJg" firstAttribute="top" secondItem="XOx-Kx-C8f" secondAttribute="bottom" constant="40" id="Ugc-fz-bKd"/>
+                            <constraint firstItem="aum-iq-Icl" firstAttribute="leading" secondItem="Zig-tk-C8y" secondAttribute="leading" constant="60" id="ckq-fA-DGd"/>
+                            <constraint firstItem="Zig-tk-C8y" firstAttribute="trailing" secondItem="XOx-Kx-C8f" secondAttribute="trailing" constant="60" id="jEB-vi-jyS"/>
+                            <constraint firstItem="XOx-Kx-C8f" firstAttribute="leading" secondItem="Zig-tk-C8y" secondAttribute="leading" constant="60" id="uGx-oo-gJK"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Drums" image="square.grid.3x3.topright.fill" catalog="system" id="Wu4-B3-X3A"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TxS-BZ-DGd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1634" y="528"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="ghi-dW-Ys5">
@@ -234,36 +417,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="selectedImageTintColor" name="FlashColors"/>
+                        <color key="selectedImageTintColor" name="MelodeeColors"/>
                     </tabBar>
                     <connections>
                         <segue destination="TiL-xe-Ju3" kind="relationship" relationship="viewControllers" id="Hyc-oL-08a"/>
                         <segue destination="90U-E2-ykW" kind="relationship" relationship="viewControllers" id="Dt2-pk-3zg"/>
-                        <segue destination="Tkz-T4-1c8" kind="relationship" relationship="viewControllers" id="iHJ-95-VxN"/>
+                        <segue destination="oeO-rS-933" kind="relationship" relationship="viewControllers" id="VeQ-qc-vQI"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h83-j8-7CX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="705" y="-502"/>
+            <point key="canvasLocation" x="705" y="-411"/>
         </scene>
     </scenes>
     <resources>
-        <image name="app.badge.fill" catalog="system" width="128" height="124"/>
-        <image name="arrow.clockwise" catalog="system" width="115" height="128"/>
-        <image name="camera" catalog="system" width="128" height="94"/>
-        <image name="gearshape.fill" catalog="system" width="128" height="121"/>
-        <image name="photo.on.rectangle.angled" catalog="system" width="128" height="101"/>
-        <namedColor name="FlashColors">
-            <color red="0.87800002098083496" green="0.2669999897480011" blue="0.51399999856948853" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <image name="MelodeeIcon" width="341.5" height="341.5"/>
+        <image name="cymbal" width="96" height="80"/>
+        <image name="hat" width="76" height="80"/>
+        <image name="house.fill" catalog="system" width="128" height="106"/>
+        <image name="kick" width="68" height="80"/>
+        <image name="perc" width="87" height="80"/>
+        <image name="pianokeys.inverse" catalog="system" width="128" height="93"/>
+        <image name="snare" width="87" height="80"/>
+        <image name="square.grid.3x3.topright.fill" catalog="system" width="128" height="112"/>
+        <image name="tom" width="76" height="80"/>
+        <namedColor name="AccentColor">
+            <color red="1" green="0.3919999897480011" blue="0.3919999897480011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <systemColor name="labelColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGray5Color">
-            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
+        <namedColor name="MelodeeColors">
+            <color red="1" green="0.3919999897480011" blue="0.3919999897480011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>

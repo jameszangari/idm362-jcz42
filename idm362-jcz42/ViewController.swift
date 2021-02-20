@@ -9,11 +9,19 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var topicGenerator: UILabel!
+    @IBAction func clickMe(_ sender: Any) {
+        topicGenerator.text = "Ocean"
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        // Do after loading
+        
+        topicGenerator.text = "Landscape"
+        
     }
 
 
-}
+} // end ViewController
 

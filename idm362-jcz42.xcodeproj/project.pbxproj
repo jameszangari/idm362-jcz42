@@ -7,23 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		060057B425E1850D00196DA6 /* sounds in Resources */ = {isa = PBXBuildFile; fileRef = 060057B325E1850D00196DA6 /* sounds */; };
+		060057BD25E1A0ED00196DA6 /* Raleway-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 060057BC25E1A0ED00196DA6 /* Raleway-Bold.ttf */; };
 		0645D9C225B7274D0032897E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0645D9C125B7274D0032897E /* AppDelegate.swift */; };
 		0645D9C425B7274D0032897E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0645D9C325B7274D0032897E /* SceneDelegate.swift */; };
-		0645D9C625B7274D0032897E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0645D9C525B7274D0032897E /* ViewController.swift */; };
 		0645D9C925B7274D0032897E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0645D9C725B7274D0032897E /* Main.storyboard */; };
 		0645D9CB25B7274E0032897E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0645D9CA25B7274E0032897E /* Assets.xcassets */; };
 		0645D9CE25B7274E0032897E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0645D9CC25B7274E0032897E /* LaunchScreen.storyboard */; };
+		06F0275D25D2DAA700DEAC36 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F0275C25D2DAA700DEAC36 /* EditViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		060057B325E1850D00196DA6 /* sounds */ = {isa = PBXFileReference; lastKnownFileType = folder; path = sounds; sourceTree = "<group>"; };
+		060057BC25E1A0ED00196DA6 /* Raleway-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Bold.ttf"; sourceTree = "<group>"; };
 		0645D9BE25B7274D0032897E /* idm362-jcz42.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "idm362-jcz42.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0645D9C125B7274D0032897E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0645D9C325B7274D0032897E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0645D9C525B7274D0032897E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0645D9C825B7274D0032897E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0645D9CA25B7274E0032897E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0645D9CD25B7274E0032897E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0645D9CF25B7274E0032897E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		06F0275C25D2DAA700DEAC36 /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,9 +41,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		060057BB25E1A0ED00196DA6 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				060057BC25E1A0ED00196DA6 /* Raleway-Bold.ttf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
 		0645D9B525B7274D0032897E = {
 			isa = PBXGroup;
 			children = (
+				060057BB25E1A0ED00196DA6 /* fonts */,
+				060057B325E1850D00196DA6 /* sounds */,
 				0645D9C025B7274D0032897E /* idm362-jcz42 */,
 				0645D9BF25B7274D0032897E /* Products */,
 			);
@@ -58,8 +72,8 @@
 			children = (
 				0645D9C125B7274D0032897E /* AppDelegate.swift */,
 				0645D9C325B7274D0032897E /* SceneDelegate.swift */,
-				0645D9C525B7274D0032897E /* ViewController.swift */,
 				0645D9C725B7274D0032897E /* Main.storyboard */,
+				06F0275C25D2DAA700DEAC36 /* EditViewController.swift */,
 				0645D9CA25B7274E0032897E /* Assets.xcassets */,
 				0645D9CC25B7274E0032897E /* LaunchScreen.storyboard */,
 				0645D9CF25B7274E0032897E /* Info.plist */,
@@ -124,8 +138,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				060057B425E1850D00196DA6 /* sounds in Resources */,
 				0645D9CE25B7274E0032897E /* LaunchScreen.storyboard in Resources */,
 				0645D9CB25B7274E0032897E /* Assets.xcassets in Resources */,
+				060057BD25E1A0ED00196DA6 /* Raleway-Bold.ttf in Resources */,
 				0645D9C925B7274D0032897E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,7 +153,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0645D9C625B7274D0032897E /* ViewController.swift in Sources */,
+				06F0275D25D2DAA700DEAC36 /* EditViewController.swift in Sources */,
 				0645D9C225B7274D0032897E /* AppDelegate.swift in Sources */,
 				0645D9C425B7274D0032897E /* SceneDelegate.swift in Sources */,
 			);
