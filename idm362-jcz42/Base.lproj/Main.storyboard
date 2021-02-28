@@ -403,7 +403,9 @@
                             <constraint firstItem="XOx-Kx-C8f" firstAttribute="leading" secondItem="Zig-tk-C8y" secondAttribute="leading" constant="60" id="uGx-oo-gJK"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Drums" image="square.grid.3x3.topright.fill" catalog="system" id="Wu4-B3-X3A"/>
+                    <tabBarItem key="tabBarItem" title="Drums" image="drum" id="Wu4-B3-X3A">
+                        <color key="badgeColor" name="AccentColor"/>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TxS-BZ-DGd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -433,13 +435,13 @@
     <resources>
         <image name="MelodeeIcon" width="341.5" height="341.5"/>
         <image name="cymbal" width="96" height="80"/>
+        <image name="drum" width="23" height="22"/>
         <image name="hat" width="76" height="80"/>
         <image name="house.fill" catalog="system" width="128" height="106"/>
         <image name="kick" width="68" height="80"/>
         <image name="perc" width="87" height="80"/>
         <image name="pianokeys.inverse" catalog="system" width="128" height="93"/>
         <image name="snare" width="87" height="80"/>
-        <image name="square.grid.3x3.topright.fill" catalog="system" width="128" height="112"/>
         <image name="tom" width="76" height="80"/>
         <namedColor name="AccentColor">
             <color red="1" green="0.3919999897480011" blue="0.3919999897480011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
