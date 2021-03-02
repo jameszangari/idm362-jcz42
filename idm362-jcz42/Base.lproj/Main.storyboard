@@ -320,6 +320,11 @@
                                         <rect key="frame" x="0.0" y="0.0" width="107.5" height="90"/>
                                         <color key="backgroundColor" red="0.2666666667" green="0.2666666667" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" image="kick"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="playDrumKick:" destination="oeO-rS-933" eventType="touchUpInside" id="YCe-O7-bw5"/>
                                         </connections>
@@ -328,6 +333,11 @@
                                         <rect key="frame" x="147.5" y="0.0" width="107.5" height="90"/>
                                         <color key="backgroundColor" red="0.2666666667" green="0.2666666667" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" image="snare"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="playDrumSnare:" destination="oeO-rS-933" eventType="touchUpInside" id="X7G-zF-CyZ"/>
                                         </connections>
@@ -345,6 +355,11 @@
                                         <rect key="frame" x="0.0" y="0.0" width="107.5" height="90"/>
                                         <color key="backgroundColor" red="0.2666666667" green="0.2666666667" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" image="hat"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="playDrumHat:" destination="oeO-rS-933" eventType="touchUpInside" id="2RD-23-pjm"/>
                                         </connections>
@@ -353,6 +368,11 @@
                                         <rect key="frame" x="147.5" y="0.0" width="107.5" height="90"/>
                                         <color key="backgroundColor" red="0.2666666667" green="0.2666666667" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" image="cymbal"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="playDrumCrash:" destination="oeO-rS-933" eventType="touchUpInside" id="0kv-1V-Ava"/>
                                         </connections>
@@ -370,6 +390,11 @@
                                         <rect key="frame" x="0.0" y="0.0" width="107.5" height="90"/>
                                         <color key="backgroundColor" red="0.2666666667" green="0.2666666667" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" image="tom"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="playDrumTom:" destination="oeO-rS-933" eventType="touchUpInside" id="u1F-fV-qAJ"/>
                                         </connections>
@@ -378,6 +403,11 @@
                                         <rect key="frame" x="147.5" y="0.0" width="107.5" height="90"/>
                                         <color key="backgroundColor" red="0.2666666667" green="0.2666666667" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" image="perc"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="playDrumPerc:" destination="oeO-rS-933" eventType="touchUpInside" id="TNS-T8-DGt"/>
                                         </connections>
