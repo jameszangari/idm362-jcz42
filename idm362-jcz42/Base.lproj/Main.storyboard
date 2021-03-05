@@ -16,7 +16,7 @@
         <!--Home-->
         <scene sceneID="TYP-vD-r2a">
             <objects>
-                <viewController id="TiL-xe-Ju3" sceneMemberID="viewController">
+                <viewController id="TiL-xe-Ju3" customClass="EditViewController" customModule="idm362_jcz42" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XsX-wC-dfb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -316,7 +316,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="aum-iq-Icl">
                                 <rect key="frame" x="60" y="40" width="255" height="90"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jbc-mD-tKg">
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jbc-mD-tKg">
                                         <rect key="frame" x="0.0" y="0.0" width="107.5" height="90"/>
                                         <color key="backgroundColor" red="0.2666666667" green="0.2666666667" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" image="kick"/>

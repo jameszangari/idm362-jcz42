@@ -34,6 +34,10 @@ var pianoBAudioPlayerObj = AVAudioPlayer()
 
 class EditViewController: UIViewController {
 
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do after loading the view.
